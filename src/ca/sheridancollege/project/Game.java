@@ -13,6 +13,8 @@ import java.util.ArrayList;
  *
  * @author dancye
  * @author Paul Bonenfant Jan 2020
+ * @author Venthan Ganesh
+ * @autho Fallon Higgins
  */
 public abstract class Game {
 
@@ -44,15 +46,17 @@ public abstract class Game {
     public void setPlayers(ArrayList<Player> players) {
         this.players = players;
     }
+    
+    public abstract void deal(StandardDeck deck, Player player1, Player player2);
 
     /**
      * Play the game. This might be one method or many method calls depending on your game.
      */
-    public abstract void play();
+    public abstract int play(int index, Player player1, Player player2);
 
     /**
      * When the game is over, use this method to declare and display a winning player.
      */
-    public abstract void declareWinner();
+    public abstract void declareWinner(Player player1, Player player2);
 
 }//end class

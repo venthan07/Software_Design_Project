@@ -5,11 +5,15 @@
  */
 package ca.sheridancollege.project;
 
+import java.util.ArrayList;
+
 /**
  * A class that models each Player in the game. Players have an identifier, which should be unique.
  *
  * @author dancye
  * @author Paul Bonenfant Jan 2020
+ * @author Venthan Ganesh
+ * @author Fallon Higgins
  */
 public abstract class Player {
 
@@ -31,6 +35,9 @@ public abstract class Player {
         return name;
     }
 
+    public abstract ArrayList<Card> getHand();
+    
+    public abstract ArrayList<Card> getWinningPile();
     /**
      * Ensure that the playerID is unique
      *

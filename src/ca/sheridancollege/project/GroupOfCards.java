@@ -14,6 +14,8 @@ import java.util.Collections;
  *
  * @author dancye
  * @author Paul Bonenfant Jan 2020
+ * @author Venthan Ganesh
+ * @author Fallon Higgins
  */
 public class GroupOfCards {
 
@@ -22,7 +24,8 @@ public class GroupOfCards {
     private int size;//the size of the grouping
 
     public GroupOfCards(int size) {
-        this.size = size;
+        setSize(size);
+        cards = new ArrayList<>();
     }
 
     /**
