@@ -59,12 +59,10 @@ public class Card {
      */
     @Override
     public String toString() {
-//        if (this.value == 1 || this.value >= 11 && this.value <= 13) {
-//            return faceCard(this.value) + " of " + this.suit;
-//        } else {
+
         return this.value + " of " + this.suit;
 
-        //}
+       
     }
 
 }

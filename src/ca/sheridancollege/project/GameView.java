@@ -40,7 +40,4 @@ public class GameView {
         return sc.nextLine();
     }
     
-//    public String playersCardsFlippedView(String card1, String card2, String name1, String name2){
-//        return "Player 1: " + name1 + " has flippeded a " + card1 + " Player 2: " + name2 + " has flipped a " + card2;
-//    }
 }

@@ -24,15 +24,7 @@ public class PlayGame {
         gameCtrl.clearHands(player1, player2);
 
         game.declareWinner(player1, player2);
-//        System.out.println("Player1 winningPile: ");
-//        for (Card card : player1.getWinningPile()) {
-//            System.out.println(card);
-//        }
-//
-//        System.out.println("Player2 winningPile: ");
-//        for (Card card : player2.getWinningPile()) {
-//            System.out.println("Player2 winningpile cards: " + card);
-//        }
+
     }
 
 }
